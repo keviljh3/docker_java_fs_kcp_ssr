@@ -2,7 +2,7 @@ var http = require('http');
 
     http.createServer(function(req, res){
 	process.env.TZ = "Asia/Shanghai";
-        var time=new Date();	
+        var time=new Date().toLocaleString();	
         var html = '<html>'  
         +'<head>'  
         +'<title>jel Nodejs 80</title>'  
