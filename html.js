@@ -1,6 +1,7 @@
 var http = require('http');
 
-    http.createServer(function(req, res){ 
+    http.createServer(function(req, res){
+	process.env.TZ = "Asia/Shanghai";
         var time=new Date();	
         var html = '<html>'  
         +'<head>'  
