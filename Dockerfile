@@ -24,7 +24,7 @@ EXPOSE 17520/tcp
 
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
-RUN wget https://github.com/kevinljh11/shadowsocks/raw/rm/server_linux_amd64 -O /server_linux_amd64
+RUN wget https://github.com/kevinljh11/kcp_udp_fs/raw/master/kcps64_170120 -O /server_linux_amd64
 RUN chmod +x /server_linux_amd64
 RUN wget https://github.com/keviljh3/docker_java_fs_kcp_ssr/raw/master/html.js
 
